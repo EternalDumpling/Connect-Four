@@ -10,6 +10,17 @@
   <div class="container">
     <h1>Connect Four</h1>
 
+    <div class="mode-selector">
+      <button class="mode-btn active" id="modeHuman" data-mode="human">2 Players</button>
+      <button class="mode-btn" id="modeCpu" data-mode="cpu">vs CPU</button>
+    </div>
+
+    <div class="difficulty-selector hidden" id="difficultySelector">
+      <button class="diff-btn" id="diffEasy" data-diff="easy">Easy</button>
+      <button class="diff-btn active" id="diffMedium" data-diff="medium">Medium</button>
+      <button class="diff-btn" id="diffHard" data-diff="hard">Hard</button>
+    </div>
+
     <div class="scoreboard">
       <div class="score player1">
         <span class="score-label">Player 1</span>
@@ -20,7 +31,7 @@
         <span class="score-value" id="scoreDraws">0</span>
       </div>
       <div class="score player2">
-        <span class="score-label">Player 2</span>
+        <span class="score-label" id="p2Label">Player 2</span>
         <span class="score-value" id="score2">0</span>
       </div>
     </div>

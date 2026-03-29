@@ -30,6 +30,46 @@ h1 {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
+/* Mode / Difficulty selectors */
+.mode-selector,
+.difficulty-selector {
+  display: flex;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mode-btn,
+.diff-btn {
+  padding: 7px 20px;
+  border-radius: 7px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: transparent;
+  color: #aaa;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+.mode-btn:hover,
+.diff-btn:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  transform: none;
+}
+
+.mode-btn.active,
+.diff-btn.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.difficulty-selector.hidden {
+  display: none;
+}
+
 /* Scoreboard */
 .scoreboard {
   display: flex;
